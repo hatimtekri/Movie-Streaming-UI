@@ -6,7 +6,7 @@ export const TitleStyle = styled(Title)`
 &.title{
     &.ant-typography
     {
-        color: inherit;
+        color: ${(props) => props.theme.Base_03};
         font-size: ${(props) => props.fontSize}px;
         font:inter;
     }

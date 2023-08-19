@@ -14,6 +14,7 @@ export const CustomTheme = {
       Base_10:"#66707A",
       Base_11:"#434E58",
       Base_12:"#171725",
+      Base_13:"#29282F",
 
 
       Primary_01:"#F9F9F9",
@@ -45,6 +46,7 @@ export const CustomTheme = {
       Base_10:"#E3E9ED",
       Base_11:"#ECF1F6",
       Base_12:"#F9F9F9",
+      Base_13:"#F9F9F9",
 
 
 
