@@ -30,7 +30,7 @@ const MainLayout = ({ children }) => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout style={} >
+    <Layout  >
       <Header
         style={{
           display: "flex",

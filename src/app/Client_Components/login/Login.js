@@ -13,7 +13,7 @@ const Login = () => {
       <div className="login-left-side">
         <div className="login-left-side-text-wrapper">
           <div className="login-left-side-text">
-            <Title strong={true} level={5}>
+          <Title strong={true} level={5}>
               The biggest international and local film streaming
             </Title>
             <Text size="medium">
