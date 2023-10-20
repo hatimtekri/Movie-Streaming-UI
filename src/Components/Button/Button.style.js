@@ -13,7 +13,7 @@ export const ButtonStyle = styled(Button)`
 }
 &.dark-button{
     background-color: ${(props) => props.theme.Base_01};
-    color: ${(props) => props.theme.Base_03};
+    color: ${(props) => props.theme.Primary_01};
     border-color: transparent;
     border-radius: 20px;
 }

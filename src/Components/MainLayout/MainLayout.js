@@ -30,7 +30,7 @@ const MainLayout = ({ children }) => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout  >
+    <Layout style={{height:"100vh"}}  >
       <Header
         style={{
           display: "flex",
@@ -64,6 +64,7 @@ const MainLayout = ({ children }) => {
               margin: 0,
               minHeight: 280,
               background: colorBgContainer,
+              height:"100%"
             }}
           >
             {children}
