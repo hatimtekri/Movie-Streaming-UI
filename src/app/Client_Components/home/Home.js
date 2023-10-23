@@ -27,7 +27,6 @@ const Home = () => {
             <Channel link={"/assets/marvel.png"}></Channel>
             <Channel link={"/assets/national-geographic.png"}></Channel>
             <Channel link={"/assets/star-wars.png"}></Channel>
-          
           </div>
           <div className="recent-watched">
             <RecentWatchedPlayer
@@ -35,18 +34,17 @@ const Home = () => {
               state={"pause"}
               title="Moon Knight"
               year={"2022"}
-
             ></RecentWatchedPlayer>
-              <RecentWatchedPlayer
+            <RecentWatchedPlayer
               link={"/assets/rwatch2.png"}
               state={"playing"}
               title="Moon Knight"
               year={"2022"}
             ></RecentWatchedPlayer>
-              <RecentWatchedPlayer
+            <RecentWatchedPlayer
               link={"/assets/rwatch1.png"}
             ></RecentWatchedPlayer>
-              <RecentWatchedPlayer
+            <RecentWatchedPlayer
               link={"/assets/rwatch2.png"}
             ></RecentWatchedPlayer>
           </div>

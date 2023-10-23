@@ -23,8 +23,22 @@ export const RecentWatchedPlayerStyle = styled.div`
     position: absolute;
     bottom: 0;
     height: 35%;
-    width: 100%;
-    background-color: aqua;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+    
+    margin: 10px;
+    .action-button {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
   }
 
   .player-pause-info {
@@ -39,9 +53,9 @@ export const RecentWatchedPlayerStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .action-button {
-    width: 48px;
-    height: 48px;
+    .action-button {
+      width: 48px;
+      height: 48px;
+    }
   }
 `;

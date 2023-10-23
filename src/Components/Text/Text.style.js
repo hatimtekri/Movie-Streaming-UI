@@ -17,6 +17,7 @@ export const TextStyle = styled(Text)`
         color: ${(props) => props.theme.Primary_02};
         font-size: ${(props) => props.fontSize}px;
         font:inter;
+        
     }
 }
 `
