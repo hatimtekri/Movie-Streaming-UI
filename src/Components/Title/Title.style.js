@@ -11,4 +11,12 @@ export const TitleStyle = styled(Title)`
         font:inter;
     }
 }
+&.movie-player-title{
+    &.ant-typography
+    {
+        color: ${(props) => props.theme.Primary_01};
+        font-size: ${(props) => props.fontSize}px;
+        font:inter;
+    }
+}
 `

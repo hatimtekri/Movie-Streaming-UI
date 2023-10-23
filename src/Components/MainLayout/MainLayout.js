@@ -6,6 +6,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { ContentStyle, HeaderStyle, LayoutStyle } from "./MainLayout.style";
 const { Header, Content, Sider } = Layout;
 
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
@@ -30,15 +31,15 @@ const MainLayout = ({ children }) => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout style={{height:"100vh"}}  >
-      <Header
+    <LayoutStyle style={{height:"100vh"}}  >
+      <HeaderStyle
         style={{
           display: "flex",
           alignItems: "center",
         }}
       >
         <div className="demo-logo" />
-      </Header>
+      </HeaderStyle>
       <Layout>
         <Sider
           width={200}
@@ -58,20 +59,19 @@ const MainLayout = ({ children }) => {
           />
         </Sider>
         <Layout>
-          <Content
+          <ContentStyle
             style={{
               padding: 24,
               margin: 0,
               minHeight: 280,
-              background: colorBgContainer,
               height:"100%"
             }}
           >
             {children}
-          </Content>
+          </ContentStyle>
         </Layout>
       </Layout>
-    </Layout>
+    </LayoutStyle>
   );
 };
 export default MainLayout;

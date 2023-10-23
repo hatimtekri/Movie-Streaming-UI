@@ -51,7 +51,7 @@ export const CustomTheme = {
 
 
       Primary_01:"#F9F9F9",
-
+      Primary_02:"#78828A",
 
   
       Success:"#00C566",

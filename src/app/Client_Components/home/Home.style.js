@@ -11,20 +11,35 @@ export const HomeStyle = styled.div`
     .display-series {
       width: 100%;
       height: 50%;
-     
-     padding: 10px;
+
+      padding: 10px;
     }
 
     .channels {
       width: 100%;
       height: 18%;
-      background-color: black;
+      background-color: transparent;
+      display: flex;
+      padding: 10px;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+    .channels::-webkit-scrollbar {
+      width: 0;
+      height: 0;
     }
 
     .recent-watched {
       width: 100%;
       height: 32%;
-      background-color: antiquewhite;
+      background-color: transparent;
+
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+    .recent-watched::-webkit-scrollbar {
+      width: 0;
+      height: 0;
     }
   }
   .side-bar {
@@ -32,13 +47,13 @@ export const HomeStyle = styled.div`
     height: 100%;
     background-color: green;
 
-    .top-movies{
-        width: 100%;
+    .top-movies {
+      width: 100%;
       height: 70%;
       background-color: black;
     }
     .favorites {
-        width: 100%;
+      width: 100%;
       height: 30%;
       background-color: red;
     }

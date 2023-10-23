@@ -11,4 +11,12 @@ export const TextStyle = styled(Text)`
         font:inter;
     }
 }
+&.movie-player-text{
+    &.ant-typography
+    {
+        color: ${(props) => props.theme.Primary_02};
+        font-size: ${(props) => props.fontSize}px;
+        font:inter;
+    }
+}
 `
