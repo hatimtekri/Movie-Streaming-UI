@@ -5,7 +5,8 @@ import React from "react";
 import { RecentWatchedPlayerStyle } from "./RecentWatchedPlayer.style";
 import { FaPlay } from "react-icons/fa";
 import Text from "@/Components/Text/Text";
-function RecentWatchedPlayer({ link, state, title, year }) {
+import PlayerSeek from "../PlayerSeek/PlayerSeek";
+function RecentWatchedPlayer({ link, state, title, year,currentTime,loadedTime,totalTime }) {
   return (
     <RecentWatchedPlayerStyle>
       <Image src={link} className="image" width="110" height="50"></Image>
@@ -21,10 +22,25 @@ function RecentWatchedPlayer({ link, state, title, year }) {
               {year}
             </Text>
 
-            <div className="action-button">
-              <IconWrapper borderRadius={25}>
-                <FaPlay size={15} color="white"></FaPlay>
-              </IconWrapper>
+            <div className="player-action-bar" >
+              <div className="action-button">
+                <IconWrapper borderRadius={25}>
+                  <FaPlay size={15} color="white"></FaPlay>
+                </IconWrapper>
+              </div>
+              <div className="current-time">
+                <Text className="movie-player-time-text"> {currentTime}</Text>{" "}
+              </div>
+              <div className="seek">
+                <PlayerSeek
+                  currentTime={currentTime}
+                  totalTime={totalTime}
+                  loadedTime={loadedTime}
+                ></PlayerSeek>
+              </div>
+              <div className="total-time">
+                <Text className="movie-player-time-text"> {totalTime}</Text>
+              </div>
             </div>
           </div>
         </>

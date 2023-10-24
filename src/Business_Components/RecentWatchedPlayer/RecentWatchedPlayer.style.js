@@ -31,13 +31,40 @@ export const RecentWatchedPlayerStyle = styled.div`
    
     
     margin: 10px;
+
+
+ .player-action-bar {
+    display: flex;
+    width: 100%;
+    
+    align-items: center;
     .action-button {
       width: 35px;
       height: 35px;
       display: flex;
       justify-content: center;
       align-items: center;
+
     }
+    .current-time{
+        width: 50px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+    }
+
+    .seek{
+     width: calc(100% - 180px);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      //background-color: yellow;
+    }
+ }
     
   }
 

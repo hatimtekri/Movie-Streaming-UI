@@ -20,4 +20,13 @@ export const TextStyle = styled(Text)`
         
     }
 }
+&.movie-player-time-text {
+    &.ant-typography
+    {
+        color: ${(props) => props.theme.Primary_01};
+        font-size: ${(props) => props.fontSize}px;
+        font:inter;
+        
+    }
+}
 `

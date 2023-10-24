@@ -40,9 +40,16 @@ const Home = () => {
               state={"playing"}
               title="Moon Knight"
               year={"2022"}
+              currentTime={"1:05"}
+              totalTime={"2:35:50"}
+              loadedTime={"1:30:30"}
             ></RecentWatchedPlayer>
             <RecentWatchedPlayer
               link={"/assets/rwatch1.png"}
+              state={"pause"}
+              title="React JS"
+              year={"2023"}
+             
             ></RecentWatchedPlayer>
             <RecentWatchedPlayer
               link={"/assets/rwatch2.png"}
