@@ -16,7 +16,7 @@ export const DisplaySeriesStyle = styled.div`
     position: absolute;
     bottom: 35px;
     left: 35px;
-    border: 1px solid red;
+
     background-color: transparent;
     padding: 5px;
     .tag {
@@ -27,7 +27,8 @@ export const DisplaySeriesStyle = styled.div`
     .title {
       width: 100%;
       height: 40%;
-      border: 1px solid yellow;
+      
+      
     }
     .action-button {
       width: 100%;
@@ -45,6 +46,11 @@ export const DisplaySeriesStyle = styled.div`
       .add-watchlist{
         width: 50%;
         height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: ${(props) => props.theme.Primary_01};
+        
 
       }
     }

@@ -29,4 +29,13 @@ export const TextStyle = styled(Text)`
         
     }
 }
+&.display-series-title-description-text {
+    &.ant-typography
+    {
+        color: ${(props) => props.theme.Primary_02};
+        font-size: ${(props) => props.fontSize}px;
+        font:inter;
+        
+    }
+}
 `
