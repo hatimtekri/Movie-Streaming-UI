@@ -4,6 +4,9 @@ import Title from "@/Components/Title/Title";
 import Image from "next/image";
 import React from "react";
 import { DisplaySeriesStyle } from "./DisplaySeries.style";
+import Tag from "@/Components/Tag/Tag";
+
+
 
 function DisplaySeries() {
   return (
@@ -16,7 +19,9 @@ function DisplaySeries() {
       ></Image>
 
       <div className="action-part">
-        <div className="tag"></div>
+        <div className="tag">
+          <Tag>Series</Tag>
+        </div>
         <div className="title">
         <Title className="movie-player-title" >MS. Marvel</Title>
        <Text className="display-series-title-description-text" >1 Season • 6 Episodes • Superhero • Marvel</Text>

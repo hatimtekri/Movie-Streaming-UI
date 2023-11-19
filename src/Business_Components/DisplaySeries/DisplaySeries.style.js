@@ -22,7 +22,17 @@ export const DisplaySeriesStyle = styled.div`
     .tag {
       width: 100%;
       height: 25%;
-      border: 1px solid blue;
+     // border: 1px solid blue;
+      display: flex;
+      align-items: center;
+      .customTag {
+        padding: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 16px;
+    
+
+      }
     }
     .title {
       width: 100%;
