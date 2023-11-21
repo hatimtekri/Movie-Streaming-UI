@@ -45,12 +45,20 @@ export const HomeStyle = styled.div`
   .side-bar {
     width: 30%;
     height: 100%;
-    background-color: green;
+    background-color: transparent;
 
     .top-movies {
       width: 100%;
       height: 70%;
-      background-color: black;
+      background-color: transparent;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
     }
     .favorites {
       width: 100%;

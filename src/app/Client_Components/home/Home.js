@@ -3,6 +3,8 @@
 import Channel from "@/Business_Components/Channel/Channel";
 import DisplaySeries from "@/Business_Components/DisplaySeries/DisplaySeries";
 import RecentWatchedPlayer from "@/Business_Components/RecentWatchedPlayer/RecentWatchedPlayer";
+import TopMovies from "@/Business_Components/TopMovies/TopMovies";
+import Title from "@/Components/Title/Title";
 import { HomeStyle } from "./Home.style";
 
 const Home = () => {
@@ -57,7 +59,14 @@ const Home = () => {
           </div>
         </div>
         <div className="side-bar">
-          <div className="top-movies"></div>
+          <div className="top-movies">
+            <Title level={6} className="movie-player-title" >Top Movies</Title>
+            <TopMovies imagePath="/assets/marvel.png" tag="PG-13" title="The Shawshank Redemption (1994)" type="Drama" rating={9.2} ></TopMovies>
+            <TopMovies imagePath="/assets/marvel.png" tag="PG-13" title="The Godfather" type="Crime • Drama" rating={9.2} ></TopMovies>
+            <TopMovies imagePath="/assets/marvel.png" tag="PG-13" title="The Dark Knight (2008)" type="Action • Crime" rating={9.1} ></TopMovies>
+            
+           
+          </div>
           <div className="favorites"></div>
         </div>
       </HomeStyle>
