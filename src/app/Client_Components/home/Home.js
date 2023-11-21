@@ -4,6 +4,8 @@ import Channel from "@/Business_Components/Channel/Channel";
 import DisplaySeries from "@/Business_Components/DisplaySeries/DisplaySeries";
 import RecentWatchedPlayer from "@/Business_Components/RecentWatchedPlayer/RecentWatchedPlayer";
 import TopMovies from "@/Business_Components/TopMovies/TopMovies";
+import Button from "@/Components/Button/Button";
+import Tag from "@/Components/Tag/Tag";
 import Title from "@/Components/Title/Title";
 import { HomeStyle } from "./Home.style";
 
@@ -51,7 +53,6 @@ const Home = () => {
               state={"pause"}
               title="React JS"
               year={"2023"}
-             
             ></RecentWatchedPlayer>
             <RecentWatchedPlayer
               link={"/assets/rwatch2.png"}
@@ -60,14 +61,53 @@ const Home = () => {
         </div>
         <div className="side-bar">
           <div className="top-movies">
-            <Title level={6} className="movie-player-title" >Top Movies</Title>
-            <TopMovies imagePath="/assets/marvel.png" tag="PG-13" title="The Shawshank Redemption (1994)" type="Drama" rating={9.2} ></TopMovies>
-            <TopMovies imagePath="/assets/marvel.png" tag="PG-13" title="The Godfather" type="Crime • Drama" rating={9.2} ></TopMovies>
-            <TopMovies imagePath="/assets/marvel.png" tag="PG-13" title="The Dark Knight (2008)" type="Action • Crime" rating={9.1} ></TopMovies>
-            
-           
+            <Title level={6} className="movie-player-title">
+              Top Movies
+            </Title>
+            <TopMovies
+              imagePath="/assets/top-movie-1.png"
+              tag="PG-13"
+              title="The Shawshank Redemption (1994)"
+              type="Drama"
+              rating={9.2}
+            ></TopMovies>
+            <TopMovies
+              imagePath="/assets/top-movie-2.png"
+              tag="PG-13"
+              title="The Godfather"
+              type="Crime • Drama"
+              rating={9.2}
+            ></TopMovies>
+            <TopMovies
+              imagePath="/assets/top-movie-3.png"
+              tag="PG-13"
+              title="The Dark Knight (2008)"
+              type="Action • Crime"
+              rating={9.1}
+            ></TopMovies>
+            <Button className="outline-button">See All</Button>
           </div>
-          <div className="favorites"></div>
+          <div className="favorites">
+            <Title level={6} className="movie-player-title">
+              Favorites Genres
+            </Title>
+            <div className="tags">
+              <Tag className="favorites-tag" >Action</Tag>
+              <Tag className="favorites-tag" >Fantasy</Tag>
+              <Tag className="favorites-tag" >Comedy</Tag>
+              <Tag className="favorites-tag" >Sci-Fi</Tag>
+              <Tag className="favorites-tag" >Drama</Tag>
+              <Tag className="favorites-tag" >Romance</Tag>
+              <Tag className="favorites-tag" >Mystery</Tag>
+
+              <Tag className="favorites-tag" >Action</Tag>
+              <Tag className="favorites-tag" >Fantasy</Tag>
+              <Tag className="favorites-tag" >Comedy</Tag>
+              <Tag className="favorites-tag" >Sci-Fi</Tag>
+             
+              
+            </div>
+          </div>
         </div>
       </HomeStyle>
     </>

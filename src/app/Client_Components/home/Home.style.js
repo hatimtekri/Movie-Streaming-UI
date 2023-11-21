@@ -52,18 +52,48 @@ export const HomeStyle = styled.div`
       height: 70%;
       background-color: transparent;
 
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      .outline-button {
+        max-width: 274px;
+        width: 100%;
+        height: 48px;
+        padding: 12px 24px 12px 24px;
+        border-radius: 24px;
+      }
     }
     .favorites {
       width: 100%;
       height: 30%;
-      background-color: red;
+      background-color: #0D0C0F;
+
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+
+
+      .tags{
+        width: 100%;
+        height: 200px;
+       //  background-color: aqua;
+        padding: 5px;
+        display: flex;
+        
+        flex-wrap: wrap;
+      }
+
+
     }
   }
+
+  
 `;
