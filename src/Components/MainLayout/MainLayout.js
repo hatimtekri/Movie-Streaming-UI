@@ -23,6 +23,13 @@ import Title from "../Title/Title";
 import Text from "../Text/Text";
 import Button from "../Button/Button";
 import SelectedTag from "@/Business_Components/SelectedTag/SelectedTag";
+import DiscoveryIcon from "@/Common/Icons/DiscoveryIcon";
+import StarIcon from "@/Common/Icons/StarIcon";
+import TimmerIcon from "@/Common/Icons/TimmerIcon";
+import ClockIcon from "@/Common/Icons/ClockIcon";
+import DownloadIcon from "@/Common/Icons/DownloadIcon";
+import MoonIcon from "@/Common/Icons/MoonIcon";
+import SettingIcon from "@/Common/Icons/SettingIcon";
 const { Header, Content, Sider } = Layout;
 function getItem(label, key, icon, children) {
   return {
@@ -98,38 +105,31 @@ const MainLayout = ({ children }) => {
             defaultOpenKeys={["sub1"]}
           >
             <Text>Menu</Text>
-            <Menu.Item key="1" icon={<MailOutlined size={24} />}>
-              <SelectedTag></SelectedTag> 
+            <Menu.Item key="1" icon={<DiscoveryIcon size={24} />}>
               Discovery
             </Menu.Item>
 
-            <Menu.Item key="2" icon={<StarFilled />}>
-            <SelectedTag></SelectedTag> 
+            <Menu.Item key="2" icon={<StarIcon size={24} />}>
               Top Rated
             </Menu.Item>
-            <Menu.Item key="3" icon={<CalendarOutlined />}>
-            <SelectedTag></SelectedTag> 
+            <Menu.Item key="3" icon={<TimmerIcon size={24} />}>
               Coming Soon
             </Menu.Item>
 
             <Text>Library</Text>
-            <Menu.Item key="4" icon={<CalendarOutlined />}>
-            <SelectedTag></SelectedTag> 
+            <Menu.Item key="4" icon={<ClockIcon size={24} />}>
               Recently Played
             </Menu.Item>
 
-            <Menu.Item key="5" icon={<CalendarOutlined />}>
-            <SelectedTag></SelectedTag> 
+            <Menu.Item key="5" icon={<DownloadIcon size={24} />}>
               Downloaded
             </Menu.Item>
 
-            <Menu.Item key="6" icon={<CalendarOutlined />}>
-            <SelectedTag></SelectedTag> 
+            <Menu.Item key="6" icon={<MoonIcon size={24} />}>
               Dark Mode
             </Menu.Item>
 
-            <Menu.Item key="7" icon={<CalendarOutlined />}>
-            <SelectedTag></SelectedTag> 
+            <Menu.Item key="7" icon={<SettingIcon size={24} />}>
               Setting
             </Menu.Item>
           </Menu>

@@ -97,26 +97,44 @@ export const SiderStyle = styled(Sider)`
       font-size: 1rem;
       padding-left: 36px;
       line-height: 24px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
       &-selected {
         color: #f9f9f9;
         background-color: #1a161f;
-       
-        position: relative;
 
-        .ant-menu-item-icon {
+        position: relative;
+        ::before {
+          position: absolute;
+          top: 6px;
+          width: 4px;
+          height: 30px;
+          left: 0px;
+          content: "";
+          display: block;
+          background-color: #b43feb;
+          z-index: 1;
+        }
+
+        svg {
           color: #b43feb;
           font-size: 24px;
-        }
-        .selectedTag{
-          display: block;
-          position: absolute;
-          left: 4px;
-top: 0;
-
+          margin-right: 12px;
+          :hover {
+            color: #b43feb;
+          }
         }
       }
-      .ant-menu-item-icon {
-        font-size: 24px;
+      svg {
+        margin-right: 12px;
+        :hover {
+          color: #78828a;
+        }
+      }
+
+      :hover {
+        color: #78828a;
       }
     }
 
@@ -129,7 +147,6 @@ top: 0;
         padding-right: 16px;
         display: inline-block;
         margin-bottom: 15px;
-      
       }
     }
   }
