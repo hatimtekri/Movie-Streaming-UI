@@ -11,7 +11,9 @@ import {
   LinkOutlined,
   StarFilled,
 } from "@ant-design/icons";
-import { Anchor, Avatar, Breadcrumb, Layout, Menu, theme } from "antd";
+import { IoIosArrowDown } from "react-icons/io";
+
+import { Anchor, Avatar, Badge, Breadcrumb, Layout, Menu, theme } from "antd";
 import {
   ContentStyle,
   HeaderStyle,
@@ -30,6 +32,7 @@ import ClockIcon from "@/Common/Icons/ClockIcon";
 import DownloadIcon from "@/Common/Icons/DownloadIcon";
 import MoonIcon from "@/Common/Icons/MoonIcon";
 import SettingIcon from "@/Common/Icons/SettingIcon";
+import NotificationIcon from "@/Common/Icons/Notification";
 const { Header, Content, Sider } = Layout;
 function getItem(label, key, icon, children) {
   return {
@@ -83,7 +86,15 @@ const MainLayout = ({ children }) => {
         </div>
         <div className="profile">
           <Button className="dark-button subscribe-button">Subscribe</Button>
+          <Badge size="small" count={3} >
+            <NotificationIcon size={24} color="#F9F9F9" ></NotificationIcon>
+          </Badge>
+          <div className="picture">
           <Avatar></Avatar>
+          <IoIosArrowDown size={12} color="#F9F9F9" />
+
+          </div>
+          
         </div>
       </HeaderStyle>
       <Layout>

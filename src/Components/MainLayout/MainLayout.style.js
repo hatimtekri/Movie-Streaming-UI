@@ -33,10 +33,11 @@ export const HeaderStyle = styled(Header)`
       }
     }
     .profile {
-      //  background-color: yellow;
+      // background-color: yellow;
       width: 33%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
+      padding-right: 25px;
       align-items: center;
       .subscribe-button {
         font-size: 1rem;
@@ -47,6 +48,31 @@ export const HeaderStyle = styled(Header)`
         padding-right: 24px;
         width: fit-content;
         height: fit-content;
+      }
+      .ant-badge {
+        margin-left: 32px;
+        vertical-align: middle;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+      }
+      .picture {
+        width: 56px;
+        height: 32px;
+        margin-left: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ant-avatar {
+          background-color: gray;
+          width: 32px;
+          height: 32px;
+          margin-right: 7.5px;
+          border: 1px solid #f9f9f9;
+        }
       }
     }
   }
@@ -65,12 +91,8 @@ export const SiderStyle = styled(Sider)`
         color: #78828a;
 
         :hover {
-          // background-color: ${(props) => props.theme.Base_23};
-
-          // color: ${(props) => props.theme.Secondary_04} !important;
-
-          //color: ${(props) => props.theme.Secondary_04};
-          // need to look mon this
+          color: #78828a;
+          background-color: transparent;
           cursor: pointer;
         }
       }
@@ -90,54 +112,71 @@ export const SiderStyle = styled(Sider)`
         }
       }
     }
-    .ant-menu-item {
-      background-color: #1a161f;
-      color: #78828a;
-      font-weight: 600;
-      font-size: 1rem;
-      padding-left: 36px;
-      line-height: 24px;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      &-selected {
-        color: #f9f9f9;
-        background-color: #1a161f;
-
-        position: relative;
-        ::before {
-          position: absolute;
-          top: 6px;
-          width: 4px;
-          height: 30px;
-          left: 0px;
-          content: "";
-          display: block;
-          background-color: #b43feb;
-          z-index: 1;
-        }
-
-        svg {
-          color: #b43feb;
-          font-size: 24px;
-          margin-right: 12px;
-          :hover {
-            color: #b43feb;
-          }
-        }
-      }
-      svg {
-        margin-right: 12px;
-        :hover {
-          color: #78828a;
-        }
-      }
-
+    &.ant-menu {
       :hover {
         color: #78828a;
       }
-    }
 
+      .ant-menu-item {
+        background-color: #1a161f;
+
+        color: #78828a;
+        font-weight: 600;
+        font-size: 1rem;
+        padding-left: 36px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        &-selected {
+          color: #f9f9f9;
+          background-color: #1a161f;
+
+          position: relative;
+          ::before {
+            position: absolute;
+            top: 6px;
+            width: 4px;
+            height: 30px;
+            left: 0px;
+            content: "";
+            display: block;
+            background-color: #b43feb;
+            z-index: 1;
+          }
+
+          svg {
+            color: #b43feb;
+            font-size: 24px;
+            margin-right: 12px;
+            :hover {
+              color: #b43feb;
+            }
+          }
+        }
+        svg {
+          margin-right: 12px;
+          :hover {
+            color: #78828a;
+          }
+        }
+
+        :hover {
+          color: #78828a;
+        }
+        .ant-menu-title-content {
+          :hover {
+            color: #78828a;
+          }
+        }
+        .ant-menu-item-active {
+          :hover {
+            color: #f9f9f9;
+            background-color: transparent;
+          }
+        }
+      }
+    }
     .text {
       &.ant-typography {
         color: #78828a;
