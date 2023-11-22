@@ -56,12 +56,8 @@ export const ContentStyle = styled(Content)`
   background-color: #0d0c0f;
 `;
 export const SiderStyle = styled(Sider)`
-  
-  
-
-  
   .ant-menu-root {
-    background-color: #1A161F;
+    background-color: #1a161f;
 
     .ant-menu-submenu {
       background-color: #1a161f;
@@ -95,25 +91,46 @@ export const SiderStyle = styled(Sider)`
       }
     }
     .ant-menu-item {
-      background-color: #1A161F;
+      background-color: #1a161f;
       color: #78828a;
       font-weight: 600;
       font-size: 1rem;
+      padding-left: 36px;
+      line-height: 24px;
       &-selected {
-      color: #f9f9f9;
-      background-color: #1A161F;
+        color: #f9f9f9;
+        background-color: #1a161f;
+       
+        position: relative;
+
+        .ant-menu-item-icon {
+          color: #b43feb;
+          font-size: 24px;
+        }
+        .selectedTag{
+          display: block;
+          position: absolute;
+          left: 4px;
+top: 0;
+
+        }
+      }
       .ant-menu-item-icon {
-        color: #b43feb;
+        font-size: 24px;
       }
     }
-    }
-    
 
-    .text{
+    .text {
       &.ant-typography {
-      color: #78828a;
+        color: #78828a;
+        margin-left: 4px;
+        margin-right: 4px;
+        padding-left: 36px;
+        padding-right: 16px;
+        display: inline-block;
+        margin-bottom: 15px;
+      
+      }
     }
-    }
-    
   }
 `;

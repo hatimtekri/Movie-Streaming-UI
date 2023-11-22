@@ -92,20 +92,18 @@ const Home = () => {
               Favorites Genres
             </Title>
             <div className="tags">
-              <Tag className="favorites-tag" >Action</Tag>
-              <Tag className="favorites-tag" >Fantasy</Tag>
-              <Tag className="favorites-tag" >Comedy</Tag>
-              <Tag className="favorites-tag" >Sci-Fi</Tag>
-              <Tag className="favorites-tag" >Drama</Tag>
-              <Tag className="favorites-tag" >Romance</Tag>
-              <Tag className="favorites-tag" >Mystery</Tag>
+              <Tag className="favorites-tag">Action</Tag>
+              <Tag className="favorites-tag">Fantasy</Tag>
+              <Tag className="favorites-tag">Comedy</Tag>
+              <Tag className="favorites-tag">Sci-Fi</Tag>
+              <Tag className="favorites-tag">Drama</Tag>
+              <Tag className="favorites-tag">Romance</Tag>
+              <Tag className="favorites-tag">Mystery</Tag>
 
-              <Tag className="favorites-tag" >Action</Tag>
-              <Tag className="favorites-tag" >Fantasy</Tag>
-              <Tag className="favorites-tag" >Comedy</Tag>
-              <Tag className="favorites-tag" >Sci-Fi</Tag>
-             
-              
+              <Tag className="favorites-tag">Action</Tag>
+              <Tag className="favorites-tag">Fantasy</Tag>
+              <Tag className="favorites-tag">Comedy</Tag>
+              <Tag className="favorites-tag">Sci-Fi</Tag>
             </div>
           </div>
         </div>
