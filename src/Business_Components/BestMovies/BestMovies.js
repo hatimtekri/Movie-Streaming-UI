@@ -4,41 +4,38 @@ import Text from "@/Components/Text/Text";
 import Title from "@/Components/Title/Title";
 import Image from "next/image";
 import React from "react";
-import { TopMoviesStyle } from "./TopMovies.style";
+
 import { IoMdFilm } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
+import { BestMoviesStyle } from "./BestMovies.style";
 
-const TopMovies = ({ imagePath, tag, title, type, rating, ...props }) => {
+const BestMovies = ({ imagePath, tag, title, type, rating, ...props }) => {
   return (
-    <TopMoviesStyle {...props}>
+    <BestMoviesStyle {...props}>
       <div className="thumbnail-img">
         <Image
           src={imagePath}
           className="image"
-          width="112"
-          height="137"
+          width="264"
+          height="183"
         ></Image>
       </div>
       <div className="description">
-        <Tag className="top-movies-tag">{tag}</Tag>
+        
         <Title className="movie-player-title" level={8}>
           {title}
         </Title>
-        <Text className="movie-player-text">
-          <div>
-            <IoMdFilm />
-          </div>
-          {type}
-        </Text>
+       
         <div className="rating">
           <FaStar color="#FFCD1A" size={16} />
-          <Title className="movie-player-title" level={8}>
+         <Title className="movie-player-title" level={8}>
             {rating}
           </Title>
+          <Text className="display-series-title-description-text" >| Action • Movie</Text>
         </div>
       </div>
-    </TopMoviesStyle>
+    </BestMoviesStyle>
   );
 };
 
-export default TopMovies;
+export default BestMovies;

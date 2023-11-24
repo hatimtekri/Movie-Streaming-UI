@@ -24,6 +24,11 @@ export const TopMoviesStyle = styled.div`
     }
     .movie-player-title {
       margin-top: 10px;
+   
+      width: calc(100% - 20px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .movie-player-text {
       display: flex;
