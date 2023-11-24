@@ -15,8 +15,8 @@ body {
 
 }
 body {
-  color:${(props) => props.theme.Base};
-background-color: ${(props) => props.theme.Base_07};
+  color:${(props) => props.theme.Base_02};
+background-color: ${(props) => props.theme.Base_12};
 }
 
 a {

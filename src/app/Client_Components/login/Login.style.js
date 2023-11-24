@@ -45,56 +45,97 @@ export const LoginStyle = styled.div`
       width: 50%;
       background-color: ${(props) => props.theme.Base_12};
       display: flex;
-      justify-content: space-evenly;
+      //justify-content: space-evenly;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      
     }
     .login-right-side-upper {
       height: 40%;
-      width: 50%;
+      width: 500px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
       text-align: center;
+
+    
+
     }
     .login-right-side-upper-button {
       display: flex;
       flex-direction: column;
 
-      height: 25%;
       width: 100%;
-      justify-content: space-between;
+margin-top: 40px;
+      gap: 24px;
+      .light-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 20px;
+        height: 48px;
+        width: 500px;
+        background-color: #29282f;
+      }
     }
     .login-right-side-down {
-      height: 40%;
+      
       display: flex;
       justify-content: space-around;
       flex-direction: column;
       text-align: center;
-      //  background-color: aqua;
+   
       width: 50%;
+      margin-top: 70px;
+
+      width: 500px;
+      height: 280px;
+
 
       .login-right-side-down-input {
-       // background-color: aqua;
+        // background-color: aqua;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
-        height: 40%;
+       //  height: 40%;
         .login-right-side-down-username {
           // background-color: beige;
           .login-right-side-down-username-title {
             text-align: start;
           }
+
+          input {
+            background-color: #29282f;
+            width: 500px;
+            height: 50px;
+            border-radius: 24px;
+          }
         }
         .login-right-side-down-password {
-         // background-color: blanchedalmond;
+          // background-color: blanchedalmond;
           .login-right-side-down-password-title {
             text-align: start;
           }
+
+          input {
+            background-color: #29282f;
+            width: 500px;
+            height: 50px;
+            border-radius: 24px;
+          }
         }
+
+        
       }
+      .dark-button{
+          
+          width: 500px;
+          height: 58px;
+          
+        }
     }
   }
 `;

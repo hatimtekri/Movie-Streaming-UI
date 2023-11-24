@@ -1,5 +1,7 @@
 "use client";
 
+import FacebookSymbol from "@/Common/Icons/FacebookSymbol";
+import GoogleSymbol from "@/Common/Icons/GoogleSymbol";
 import Button from "@/Components/Button/Button";
 import Input from "@/Components/Input/Input";
 import Text from "@/Components/Text/Text";
@@ -47,8 +49,12 @@ const Login = () => {
             </div>
           </div>
           <div className="login-right-side-upper-button">
-            <Button className="light-button">Login with Google</Button>
-            <Button className="light-button">Login with Facebook</Button>
+            <Button className="light-button">
+              <GoogleSymbol></GoogleSymbol>
+              Login with Google</Button>
+            <Button className="light-button">
+              <FacebookSymbol></FacebookSymbol>
+              Login with Facebook</Button>
           </div>
         </div>
         <div className="login-right-side-down">
