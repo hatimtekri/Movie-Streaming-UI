@@ -15,7 +15,7 @@ const Login = () => {
       <div className="login-left-side">
         <div className="login-left-side-text-wrapper">
           <div className="login-left-side-text">
-          <Title strong={true} level={5}>
+            <Title strong={true} level={5}>
               The biggest international and local film streaming
             </Title>
             <Text size="medium">
@@ -51,31 +51,35 @@ const Login = () => {
           <div className="login-right-side-upper-button">
             <Button className="light-button">
               <GoogleSymbol></GoogleSymbol>
-              Login with Google</Button>
+              Login with Google
+            </Button>
             <Button className="light-button">
               <FacebookSymbol></FacebookSymbol>
-              Login with Facebook</Button>
+              Login with Facebook
+            </Button>
           </div>
         </div>
         <div className="login-right-side-down">
-          <div className="login-right-side-down-input"  >
-          <div className="login-right-side-down-username">
-            <div className="login-right-side-down-username-title">
-              <Text>Full Name</Text>
+          <div className="login-right-side-down-input">
+            <div className="login-right-side-down-username">
+              <div className="login-right-side-down-username-title">
+                <Text>Full Name</Text>
+              </div>
+
+              <Input placeholder="Enter your name"></Input>
             </div>
 
-            <Input placeholder="Enter your name"></Input>
-          </div>
-
-          <div className="login-right-side-down-password">
-            <div className="login-right-side-down-password-title">
-              <Text>Password</Text>
+            <div className="login-right-side-down-password">
+              <div className="login-right-side-down-password-title">
+                <Text>Password</Text>
+              </div>
+              <Input placeholder="Enter your password"></Input>
             </div>
-            <Input placeholder="Enter your password"></Input>
           </div>
-          </div>
-         
+          <div className="forget-password" > <Text size="small" >Forget Password</Text> </div>
+
           <Button className="dark-button">Login</Button>
+          <div className="register" > <Text size="medium" >Don’t have an account? <span>Register</span> </Text> </div>
         </div>
       </div>
     </LoginStyle>

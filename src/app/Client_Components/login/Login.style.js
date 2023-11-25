@@ -49,7 +49,6 @@ export const LoginStyle = styled.div`
       flex-direction: column;
       align-items: center;
       text-align: center;
-      
     }
     .login-right-side-upper {
       height: 40%;
@@ -59,16 +58,13 @@ export const LoginStyle = styled.div`
       align-items: center;
       flex-direction: column;
       text-align: center;
-
-    
-
     }
     .login-right-side-upper-button {
       display: flex;
       flex-direction: column;
 
       width: 100%;
-margin-top: 40px;
+      margin-top: 40px;
       gap: 24px;
       .light-button {
         display: flex;
@@ -82,29 +78,30 @@ margin-top: 40px;
       }
     }
     .login-right-side-down {
-      
       display: flex;
       justify-content: space-around;
       flex-direction: column;
       text-align: center;
-   
+
       width: 50%;
       margin-top: 70px;
 
       width: 500px;
-      height: 280px;
-
+      height: 320px;
 
       .login-right-side-down-input {
         // background-color: aqua;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
-       //  height: 40%;
+        //  height: 40%;
         .login-right-side-down-username {
           // background-color: beige;
           .login-right-side-down-username-title {
             text-align: start;
+            .text {
+              color: #78828a;
+            }
           }
 
           input {
@@ -112,12 +109,16 @@ margin-top: 40px;
             width: 500px;
             height: 50px;
             border-radius: 24px;
+            border: 1px solid #29282f;
           }
         }
         .login-right-side-down-password {
           // background-color: blanchedalmond;
           .login-right-side-down-password-title {
             text-align: start;
+            .text {
+              color: #78828a;
+            }
           }
 
           input {
@@ -125,17 +126,29 @@ margin-top: 40px;
             width: 500px;
             height: 50px;
             border-radius: 24px;
+            border: 1px solid #29282f;
           }
         }
-
-        
       }
-      .dark-button{
-          
-          width: 500px;
-          height: 58px;
-          
+      .forget-password{
+        align-self: flex-end;
+        .text {
+          color: #B43FEB;
         }
+      }
+      .register{
+        margin-top: 20px;
+        .text {
+          color: #9CA4AB;
+          span {
+            color: #B43FEB;
+          }
+        }
+      }
+      .dark-button {
+        width: 500px;
+        height: 58px;
+      }
     }
   }
 `;
